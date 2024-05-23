@@ -1,0 +1,23 @@
+.btn:hover{
+    background: white;
+}
+.container{
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
+    padding: 20px;
+    padding-top: 3%;
+}
+
+.txt {
+    color: rgb(255, 255, 255);
+    font-weight: bold; 
+    margin-bottom: 2%;
+}
+
+.toast {
+    background-color: #4caf50; /* Fondo del toast */
+  }
+  
+  /* Estilos personalizados para el título del toast */
+  .toast-title {
+    color: #fff; /* Color del texto del título del toast */
+  }

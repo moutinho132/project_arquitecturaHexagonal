@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+        <img src="../../../assets/2.webp" class="imgLogo" />
+        <a class="navbar-brand text-white" routerLink="/" style="margin-left: 1%;"><h5 class="textp">Sistema de Gestión de Tareas</h5></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav" style="margin-right: 4%;">
+                <li class="nav-item">
+                    <a class="btn btn-outline-light custom-btn me-4" routerLink="">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-outline-light custom-btn me-4" routerLink="user" *ngIf="!hasToken()">Register User</a>
+              </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light custom-btn me-4" routerLink="login" *ngIf="!hasToken()">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item dropdown" *ngIf="hasToken()">
+                    <a class="btn custom-btn me-4 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cliente
+                    </a>
+
+                    <ul class="dropdown-menu bg-dark custom-btn" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item custom-btn" routerLink="customer">Nuevo Cliente</a></li>
+                        <li><a class="dropdown-item custom-btn" routerLink="customer-all">Clientes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light custom-btn me-4" routerLink="/task" *ngIf="hasToken()">Agregar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light custom-btn me-4" routerLink="/dashboard" *ngIf="hasToken()">Listar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light custom-btn me-4" (click)="logout()" *ngIf="hasToken()">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

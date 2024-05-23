@@ -1,0 +1,279 @@
+{
+  "tasks": [
+    {
+      "id": "1707706031962",
+      "description": "Desarrollar prueba técnica",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972573,
+        "person": {
+          "id": 0,
+          "name": "Pedro",
+          "surname": "Perez",
+          "dateOfBirth": "2024-01-28"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031963",
+      "description": "Configurar entorno de desarrollo",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972573,
+        "person": {
+          "id": 0,
+          "name": "Pedro",
+          "surname": "Perez",
+          "dateOfBirth": "2024-01-28"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031964",
+      "description": "Implementar base de datos",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972574,
+        "person": {
+          "id": 1,
+          "name": "Maria",
+          "surname": "Perez",
+          "dateOfBirth": "2024-03-15"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031965",
+      "description": "Desarrollar backend",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972574,
+        "person": {
+          "id": 1,
+          "name": "Maria",
+          "surname": "Perez",
+          "dateOfBirth": "2024-03-15"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031966",
+      "description": "Desarrollar frontend",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972574,
+        "person": {
+          "id": 1,
+          "name": "Maria",
+          "surname": "Perez",
+          "dateOfBirth": "2024-03-15"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031967",
+      "description": "Optimizar rendimiento del sistema",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972574,
+        "person": {
+          "id": 1,
+          "name": "Maria",
+          "surname": "Perez",
+          "dateOfBirth": "2024-03-15"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031968",
+      "description": "Implementar autenticación de usuario",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972575,
+        "person": {
+          "id": 2,
+          "name": "Fernando",
+          "surname": "Moutinho",
+          "dateOfBirth": "2024-04-20"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031969",
+      "description": "Agregar funcionalidad de recuperación de contraseña",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972575,
+        "person": {
+          "id": 2,
+          "name": "Fernando",
+          "surname": "Moutinho",
+          "dateOfBirth": "2024-04-20"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031970",
+      "description": "Implementar pruebas unitarias",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972575,
+        "person": {
+          "id": 2,
+          "name": "Fernando",
+          "surname": "Moutinho",
+          "dateOfBirth": "2024-04-20"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031971",
+      "description": "Realizar integración continua",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972575,
+        "person": {
+          "id": 2,
+          "name": "Fernando",
+          "surname": "Moutinho",
+          "dateOfBirth": "2024-04-20"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031972",
+      "description": "Configurar servidor de producción",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972576,
+        "person": {
+          "id": 3,
+          "name": "Sara",
+          "surname": "Gonzalez",
+          "dateOfBirth": "2024-05-10"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031973",
+      "description": "Implementar seguridad en la comunicación",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972576,
+        "person": {
+          "id": 3,
+          "name": "Sara",
+          "surname": "Gonzalez",
+          "dateOfBirth": "2024-05-10"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    },
+    {
+      "id": "1707706031974",
+      "description": "Documentar el código",
+      "state": "Pendiente",
+      "customer": {
+        "id": 1707705972576,
+        "person": {
+          "id": 3,
+          "name": "Sara",
+          "surname": "Gonzalez",
+          "dateOfBirth": "2024-05-10"
+        },
+        "creationTime": "2024-02-12T02:47:11.962Z"
+      }
+    }
+  ],
+  "customers": [
+    {
+      "id": 1707705972573,
+      "person": {
+        "id": 0,
+        "name": "Pedro",
+        "surname": "Perez",
+        "dni": "123456",
+        "dateOfBirth": "2024-01-28"
+      },
+      "reference": "Jose Oviedo"
+    },
+    {
+      "id": 1707705972574,
+      "person": {
+        "id": 1,
+        "name": "Maria",
+        "surname": "Perez",
+        "dni": "789012",
+        "dateOfBirth": "2024-03-15"
+      },
+      "reference": "Juan Sánchez"
+    },
+    {
+      "id": 1707705972575,
+      "person": {
+        "id": 2,
+        "name": "Fernando",
+        "surname": "Moutinho",
+        "dni": "345678",
+        "dateOfBirth": "2024-04-20"
+      },
+      "reference": "Luis Martinez"
+    },
+    {
+      "id": 1707705972576,
+      "person": {
+        "id": 3,
+        "name": "Sara",
+        "surname": "Gonzalez",
+        "dni": "901234",
+        "dateOfBirth": "2024-05-10"
+      },
+      "reference": "Elena Ramirez"
+    },
+    {
+      "id": 1707755736310,
+      "person": {
+        "id": 0,
+        "name": "Simon n",
+        "surname": "Bolivar",
+        "dni": "2323123213",
+        "dateOfBirth": "2024-01-28"
+      },
+      "reference": "Jose Oviedo"
+    }
+  ],
+  "users": [
+    {
+      "id": "32c1",
+      "name": "maria",
+      "surname": "Machado",
+      "email": "mariacorina@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "f4a6",
+      "name": "ana",
+      "surname": "lucia",
+      "email": "ana@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "5388",
+      "name": "Cipriano",
+      "surname": "Castro",
+      "email": "cipriano@gmail.com",
+      "password": "123456"
+    }
+  ]
+}

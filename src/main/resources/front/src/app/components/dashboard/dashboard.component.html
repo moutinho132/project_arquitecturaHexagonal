@@ -1,0 +1,63 @@
+<div class="container bg-black">
+    <h4 style="color: #C8FA5F;">Tareas :</h4>
+    <div style="height: 350px;">
+      <div class="table-container">
+        <table class="table table-dark table-striped table-bordered table-hover text-white">
+          <thead>
+            <tr>
+              <th>Descripción</th>
+              <th style="width: 20%;">Asignado a:</th>
+              <th style="width: 10%;">Estado</th>
+              <th style="width: 15%;">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let task of pagedTaskArr">
+              <tr>
+                <td>{{ task.description }}</td>
+                <td>{{ task.customer.person.name }} {{ task.customer.person.surname }}</td>
+                <td>{{ task.state }}</td>
+                <td>
+                  <div class="btn-group">
+                    <button class="btn btn-custom-primary me-2" data-bs-toggle="modal" type="button" data-bs-target="#exampleModal" (click)="call(task)" [disabled]="task.state ==='Completada'">
+                      <img src="../../../assets/editt.png" class="img-fluid" alt="Editar">
+                    </button>
+                    <button class="btn btn-custom-danger" (click)="deleteTask(task)">
+                      <img src="../../../assets/-.png" class="img-fluid" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="pagination-container"> <!-- Contenedor para los botones de paginación -->
+      <button class="btn btn-secondary me-1" [disabled]="currentPage === 1" (click)="prevPage()">Anterior</button>
+      <button class="btn btn-secondary" [disabled]="currentPage === totalPages" (click)="nextPage()">Siguiente</button>
+    </div>
+  </div>
+  
+   <!-- Modal para editar -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar Tarea</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group p-4">
+                    <input type="text" class="form-control" placeholder="Ingrese tarea" name="task" [(ngModel)]="updateTaskValue">
+                    <select class="form-select" [(ngModel)]="taskObj.state">
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="En Progreso">En Progreso</option>
+                        <option value="Completada">Completada</option>
+                    </select>
+                    <button class="btn btn-outline-success" type="button" data-bs-dismiss="modal" (click)="updateTask()">Actualizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+.conte{
+    background: rgb(0, 0, 0);
+    box-shadow: rgba(162, 230, 4, 0.35) 0px 5px 15px;
+    
+}
+
+.btn-custom-primary {
+    background-color: #C8FA5F;
+    border-color: #C8FA5F;
+    color: black; 
+}
+
+.btn-custom-danger {
+    background-color: #C8FA5F;
+    border-color: #C8FA5F;
+    color: black; 
+}
+
+.table-container {
+    position: relative;
+  }
+  
+  .pagination-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  

@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "240c8cc0-8ddf-471e-89e9-fb689f324e3a",
+		"name": "Backend Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12277617",
+		"_collection_link": "https://lively-resonance-315696.postman.co/workspace/New-Team-Workspace~d21a188e-0bec-4e25-ad6c-96b6cedccbec/collection/12277617-240c8cc0-8ddf-471e-89e9-fb689f324e3a?action=share&source=collection_link&creator=12277617"
+	},
+	"item": [
+		{
+			"name": "CUSTOMER",
+			"item": [
+				{
+					"name": "Save Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNzA3NzY4NDI0LCJzdWIiOiJmZXJuYW5kbyIsImlzcyI6InRva2VuIiwiZW1haWwiOiJtb3V0aW5obzEzMkBnbWFpbC5jb20iLCJleHAiOjE3MDc3NzIwMjR9.2k42NKWoCwqrDuuC-_ZuXncyAx2_hrsD92P53Ccqeyc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"person\": {\n    \"name\": \"fsfsfs\",\n    \"surname\": \"fsfsf\",\n    \"dni\": \"54646\",\n    \"dateOfBirth\": \"2024-02-12\"\n  },\n  \"reference\": \"dadada\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/customer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL CUSTOMER",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNzAzOTU4NjI4LCJzdWIiOiJmZXJuYW5kbyIsImlzcyI6Im1hcnR6YS10ZWNoIiwiZW1haWwiOiJtb3V0aW5obzEzMkBnbWFpbC5jb20iLCJleHAiOjE3MDM5NjIyMjh9.SWoH2CmJX0Vbk8bkdWFXtLIRs1iM_JBF80HckVFXdfs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/customer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TASK",
+			"item": [
+				{
+					"name": "Save Post Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNzA3NzY4NDI0LCJzdWIiOiJmZXJuYW5kbyIsImlzcyI6InRva2VuIiwiZW1haWwiOiJtb3V0aW5obzEzMkBnbWFpbC5jb20iLCJleHAiOjE3MDc3NzIwMjR9.2k42NKWoCwqrDuuC-_ZuXncyAx2_hrsD92P53Ccqeyc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\":\"testDescripcion\",\n    \"customer\": {\n        \"id\": 1,\n        \"person\": {\n            \"id\": 1,\n            \"name\": \"John\",\n            \"surname\": \"Perez\",\n            \"dateOfBirth\": \"2000-08-02\"\n        },\n        \"creationTime\": \"2023-12-30T21:54:19.86573648\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/task",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL TASK",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNzA3NzY4NDI0LCJzdWIiOiJmZXJuYW5kbyIsImlzcyI6InRva2VuIiwiZW1haWwiOiJtb3V0aW5obzEzMkBnbWFpbC5jb20iLCJleHAiOjE3MDc3NzIwMjR9.2k42NKWoCwqrDuuC-_ZuXncyAx2_hrsD92P53Ccqeyc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/task",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByCustomerTask",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/task/customer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete FindByCustomerTask",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/task/customer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE TASK COMPLETED",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/task/1/completed",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task",
+								"1",
+								"completed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FINDBYIDTASK",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/task/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get ALL User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/security/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"security",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Post User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"fernando\",\n    \"surname\":\"javier\",\n    \"email\":\"moutinho1322@gmail.com\",\n    \"password\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/security/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"security",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"moutinho132@gmail.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/security/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"security",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findCurrenUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNzAzOTU4Nzk1LCJzdWIiOiJmZXJuYW5kbyIsImlzcyI6Im1hcnR6YS10ZWNoIiwiZW1haWwiOiJtb3V0aW5obzEzMkBnbWFpbC5jb20iLCJleHAiOjE3MDM5NjIzOTV9.PNH0CDfNv-4FpUdJD7VXDHdkM6-_afWsBpgOYN84Tq4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/security/users/current",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"security",
+						"users",
+						"current"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

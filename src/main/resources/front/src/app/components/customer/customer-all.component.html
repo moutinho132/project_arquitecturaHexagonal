@@ -1,0 +1,22 @@
+<div class="container bg-dark text-white col-md-8" >
+    <h2 class="mt-4">Todos los Clientes</h2>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Fecha de Nacimiento</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers | async">
+                <td>{{ customer?.person?.name }}</td>
+                <td>{{ customer?.person?.surname }}</td>
+                <td>{{ customer?.person?.dni }}</td>
+                <td>{{ customer?.person?.dateOfBirth }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

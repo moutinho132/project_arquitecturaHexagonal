@@ -1,0 +1,29 @@
+.imgHeader{
+    width: 5%;
+}
+.imgHeader2{
+    width: 8%;
+}
+.imgAll {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.main {
+    color: white;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
+    padding: 20px;
+    padding-top: 3%;
+}
+
+.main h1 {
+    font-weight: bold;
+}
+
+.main img {
+    width: 4%; margin: 2%; 
+}

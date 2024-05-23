@@ -1,0 +1,26 @@
+.custom-btn {
+    color: #C8FA5F;
+    border-color: #C8FA5F;
+}
+
+.custom-btn:hover {
+    color: #070707;
+    background-color: #C8FA5F;
+}
+.custom-btn:active {
+    color: #C8FA5F;
+    background-color: #020202;
+}
+
+.imgLogo{
+    width: 2.5%;
+    margin-left: 4%;
+}
+
+.textp{
+    color: #C8FA5F;
+}
+.textp:hover{
+    color: azure;
+}
+

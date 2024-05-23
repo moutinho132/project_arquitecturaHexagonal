@@ -1,0 +1,24 @@
+<div class="container bg-dark text-white col-md-4 mt-4">
+    <div class="row justify-content-center">
+        <h2 class="mt-4">Agregar Usuario</h2>
+        <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" [(ngModel)]="userData.name" required>
+            </div>
+            <div class="mb-3">
+                <label for="surname" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="surname" name="surname" [(ngModel)]="userData.surname" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" [(ngModel)]="userData.email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password" [(ngModel)]="userData.password" required>
+            </div>
+            <button type="submit" class="btn btn-custom-primary" [disabled]="userForm.invalid">Crear Usuario</button>
+        </form>
+    </div>
+</div>
